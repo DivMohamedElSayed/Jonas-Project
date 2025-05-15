@@ -3,32 +3,35 @@
   <head>
     <meta charset="UTF-8" />
     <title>The Code Magazine: Introduction to HTML</title>
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+    <header class="main-header">
+      <h1>📘 The Code Magazine</h1>
+      <nav>
+        <a href="blog.html">Blog</a>
+        <a href="challenges.html">Challenges</a>
+        <a href="flexbox.html">Flexbox</a>
+        <a href="cssGrid.html">Css Grid</a>
+      </nav>
+      <h2>The Basic Language of the Web: HTML</h2>
+    </header>
     <article>
       <header>
-        <h1>📘 The Code Magazine</h1>
-        <nav>
-          <a href="blog.html">Blog</a>
-          <a href="challenges.html">Challenges</a>
-          <a href="flexbox.html">Flexbox</a>
-          <a href="cssGrid.html">Css Grid</a>
-        </nav>
-        <h2>The Basic Language of the Web: HTML</h2>
+        <img
+          src="img/laura-jones.jpg"
+          alt="Author of this Article"
+          width="50"
+          height="50"
+        />
+        <p>Posted by <strong>Laura Jones</strong> on Monday, June 21st 2027</p>
+        <img
+          src="img/post-img.jpg"
+          alt="the post has auther Posted"
+          width="500"
+          height="200"
+        />
       </header>
-      <img
-        src="img/laura-jones.jpg"
-        alt="Author of this Article"
-        width="50"
-        height="50"
-      />
-      <p>Posted by <strong>Laura Jones</strong> on Monday, June 21st 2027</p>
-      <img
-        src="img/post-img.jpg"
-        alt="the post has auther Posted"
-        width="500"
-        height="200"
-      />
       <p>
         All modern websites and web applications are built using three
         fundamental technologies: HTML, CSS and JavaScript. These are the
@@ -53,7 +56,7 @@
       </p>
       <p>In HTML, each element is made up of 3 parts:</p>
       <ol>
-        <li>The opening tag</li>
+        <li class="first-child">The opening tag</li>
         <li>The closing tag</li>
         <li>The actual element</li>
       </ol>
@@ -72,19 +75,21 @@
         web. Here are 5 of them:
       </p>
       <ul>
-        <li>To be able to use the fundamental web dev language</li>
+        <li class="first-child">
+          To be able to use the fundamental web dev language
+        </li>
         <li>
           To hand-craft beautiful websites instead of relying on tools like
           Worpress or Wix
         </li>
         <li>To build web applications</li>
         <li>To impress friends</li>
-        <li>To have fun 😃</li>
+        <li class="last-child">To have fun 😃</li>
       </ul>
       <p>Hopefully you learned something new here. See you next time!</p>
       <aside>
-        <h3>Related Posts</h3>
-        <ul>
+        <h4>Related Posts</h4>
+        <ul class="remove-bullet-point">
           <li>
             <img
               src="img/related-1.jpg"
@@ -93,7 +98,7 @@
               height="75"
             />
             <a href="#">How To Learn Web Development</a>
-            <p>By Jonas Schmedtmann</p>
+            <p class="related-author">By Jonas Schmedtmann</p>
           </li>
           <li>
             <img
@@ -103,7 +108,7 @@
               height="75"
             />
             <a href="#">The Unknown Power of Css</a>
-            <p>By Jim Dillon</p>
+            <p class="related-author">By Jim Dillon</p>
           </li>
           <li>
             <img
@@ -113,11 +118,13 @@
               height="75"
             />
             <a href="#">Why JavaScript is Awesome</a>
-            <p>By Matilda</p>
+            <p class="related-author">By Matilda</p>
           </li>
         </ul>
       </aside>
     </article>
-    <footer>Copyright &copy; 2027 by The Code Magazine.</footer>
+    <footer>
+      <p id="copyright">Copyright &copy; 2025 by The Code Magazine.</p>
+    </footer>
   </body>
 </html>
