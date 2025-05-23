@@ -1,3 +1,7 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
 h1 {
   font-style: italic;
   text-transform: uppercase;
@@ -5,9 +9,11 @@ h1 {
 }
 h2 {
   font-size: 40px;
+  margin-bottom: 20px;
 }
 h3 {
   font-size: 30px;
+  margin-bottom: 20px;
 }
 h4 {
   font-size: 20px;
@@ -17,13 +23,17 @@ h4 {
 p {
   font-size: 22px;
   line-height: 1.5;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 li {
   font-size: 20px;
+  margin-bottom: 10px;
 }
 body {
   font-family: sans-serif;
   color: #444;
+  position: relative;
 }
 #copyright {
   font-size: 17px;
@@ -42,11 +52,15 @@ h3 {
 }
 .main-header {
   background-color: #f7f7f7;
+  padding: 20px 40px;
+  margin-bottom: 60px;
+  /* height: 80px; */
 }
 aside {
   background-color: #f7f7f7;
   border-bottom: 3px solid #1098ad;
   border-top: 3px solid #1098ad;
+  padding: 50px 0px;
 }
 .first-child {
   font-weight: bold;
@@ -64,7 +78,7 @@ a:active {
   color: orangered;
   font-weight: bold;
   font-size: 18px;
-  transition-delay: 300ms;
+  /* transition-delay: 300ms; */
 }
 /* LVHA => link,visited,hover,active*/
 .button {
@@ -73,4 +87,64 @@ a:active {
 nav {
   font-size: 18px;
   font-weight: bold;
+  text-align: center;
+}
+.aside {
+  margin: 50px 70px 400px 500px;
+  width: 500px;
+}
+.post-header {
+  margin-bottom: 30px;
+}
+ul,
+ol {
+  margin-left: 50px;
+  margin-bottom: 20px;
+}
+.post-img {
+  /* width: 800px; */
+  width: 100%;
+  height: auto;
+}
+.container {
+  width: 800px;
+  margin: 0px auto;
+}
+nav a:link {
+  background-color: azure;
+  margin: 20px;
+  padding: 20px;
+  display: inline-block;
+}
+nav a:link:last-child {
+  margin-right: 0px;
+}
+button {
+  font-size: 25px;
+  border: 2px 3px solid #444;
+  padding: 20px;
+  position: absolute;
+  cursor: pointer;
+  bottom: 50px;
+  left: 10px;
+}
+h1::first-letter {
+  /* Pseudo Element */
+  font-style: normal;
+  margin-right: 5px;
+}
+h2 {
+  position: relative;
+}
+h2::after {
+  content: "TOP";
+  background-color: #ffff00;
+  font-size: 16px;
+  color: #000000;
+  font-weight: bold;
+  display: inline-block;
+  padding: 5px 10px;
+  position: absolute;
+  right: -25;
+  top: -15;
 }
